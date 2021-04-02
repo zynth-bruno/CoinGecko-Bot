@@ -20,7 +20,7 @@ def do_something(sc):
     strhtm = soup.prettify()
 
     if strhtm.find("0 Left") == -1:
-        print("COUPONS AVAILABLE!!")
+        print(">>> COUPONS AVAILABLE!! <<<")
     else:
         print("No Coupons Available")
     s.enter(60, 1, do_something, (sc,))
